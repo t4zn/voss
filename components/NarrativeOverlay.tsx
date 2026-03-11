@@ -31,16 +31,16 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 1: Opening */}
       <motion.div
         style={{ opacity: opacity1 }}
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-6"
       >
         <motion.h2 
           initial={{ y: 20 }}
           animate={{ y: 0 }}
-          className="font-serif text-5xl md:text-7xl text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
+          className="font-serif text-4xl sm:text-5xl md:text-7xl text-white mb-3 md:mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
         >
           Pure Origin
         </motion.h2>
-        <p className="text-white text-lg md:text-xl tracking-wide max-w-md drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+        <p className="text-white text-base sm:text-lg md:text-xl tracking-wide max-w-md drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
           Deep within the ancient glaciers of Norway
         </p>
       </motion.div>
@@ -48,13 +48,13 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 2: The Journey Begins */}
       <motion.div
         style={{ opacity: opacity2 }}
-        className="absolute inset-0 flex items-center px-8 md:px-16"
+        className="absolute inset-0 flex items-center px-4 md:px-8 lg:px-16"
       >
         <div className="max-w-lg">
-          <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl text-white leading-tight mb-3 md:mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
             A journey through ice
           </h2>
-          <p className="text-white text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+          <p className="text-white text-base sm:text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
             Filtered naturally through layers of rock and sand
           </p>
         </div>
@@ -63,13 +63,13 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 3: Untouched */}
       <motion.div
         style={{ opacity: opacity3 }}
-        className="absolute inset-0 flex items-center justify-end px-8 md:px-16"
+        className="absolute inset-0 flex items-center justify-end px-4 md:px-8 lg:px-16"
       >
         <div className="max-w-lg text-right">
-          <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl text-white leading-tight mb-3 md:mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
             Untouched by time
           </h2>
-          <p className="text-white text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+          <p className="text-white text-base sm:text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
             Protected beneath the ice for centuries
           </p>
         </div>
@@ -78,12 +78,12 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 4: Purity */}
       <motion.div
         style={{ opacity: opacity4 }}
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-6"
       >
-        <h2 className="font-serif text-5xl md:text-7xl text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
+        <h2 className="font-serif text-4xl sm:text-5xl md:text-7xl text-white mb-3 md:mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
           Exceptional purity
         </h2>
-        <p className="text-white text-lg md:text-xl tracking-wide max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+        <p className="text-white text-base sm:text-lg md:text-xl tracking-wide max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
           Low mineral content. Naturally balanced pH. Unfiltered. Unaltered.
         </p>
       </motion.div>
@@ -91,13 +91,13 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 5: Crystal Clarity */}
       <motion.div
         style={{ opacity: opacity5 }}
-        className="absolute inset-0 flex items-center px-8 md:px-16"
+        className="absolute inset-0 flex items-center px-4 md:px-8 lg:px-16"
       >
         <div className="max-w-lg">
-          <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl text-white leading-tight mb-3 md:mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
             Crystal clarity
           </h2>
-          <p className="text-white text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+          <p className="text-white text-base sm:text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
             Forged in ice. Perfected by nature.
           </p>
         </div>
@@ -106,13 +106,13 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 6: The Reveal */}
       <motion.div
         style={{ opacity: opacity6 }}
-        className="absolute inset-0 flex items-center justify-end px-8 md:px-16"
+        className="absolute inset-0 flex items-center justify-end px-4 md:px-8 lg:px-16"
       >
         <div className="max-w-lg text-right">
-          <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl text-white leading-tight mb-3 md:mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]">
             Captured at the source
           </h2>
-          <p className="text-white text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+          <p className="text-white text-base sm:text-lg tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
             From glacier to glass, preserving nature's perfection
           </p>
         </div>
@@ -121,22 +121,22 @@ export default function NarrativeOverlay({ isVisible, scrollContainerRef }: Narr
       {/* Section 7: Hero Finale */}
       <motion.div
         style={{ opacity: opacity7 }}
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-6"
       >
         <motion.h1 
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
-          className="font-serif text-7xl md:text-9xl text-white mb-6 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
+          className="font-serif text-6xl sm:text-7xl md:text-9xl text-white mb-4 md:mb-6 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
         >
           VOSS
         </motion.h1>
-        <p className="text-white text-xl md:text-2xl tracking-widest mb-12 drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
+        <p className="text-white text-lg sm:text-xl md:text-2xl tracking-widest mb-8 md:mb-12 drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]">
           Water, Revealed
         </p>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="pointer-events-auto px-10 py-4 border-2 border-white text-white tracking-widest text-sm hover:bg-white/10 transition-all drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
+          className="pointer-events-auto px-8 md:px-10 py-3 md:py-4 border-2 border-white text-white tracking-widest text-xs md:text-sm hover:bg-white/10 transition-all drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
         >
           Discover the Source
         </motion.button>
