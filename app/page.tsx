@@ -13,7 +13,7 @@ export default function Home() {
   const [isLoadComplete, setIsLoadComplete] = useState(false)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   
-  const TOTAL_FRAMES = 182 // Updated frame count
+  const TOTAL_FRAMES = 240 // Updated frame count
 
   // Fallback: auto-complete after 3 seconds if images don't load
   useEffect(() => {

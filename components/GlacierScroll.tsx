@@ -67,7 +67,7 @@ export default function GlacierScroll({
     for (let i = 1; i <= totalFrames; i++) {
       const img = new Image()
       const frameNumber = String(i).padStart(3, '0')
-      img.src = `/voss-frame-${frameNumber}.jpg`
+      img.src = `/frame-${frameNumber}.avif`
       
       img.onload = () => {
         loadedCount++
@@ -118,7 +118,9 @@ export default function GlacierScroll({
       const img = images[index]
       
       if (img && img.complete && img.naturalWidth > 0) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        // Fill canvas with glacier background color first
+        ctx.fillStyle = '#eaeaec'
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
         
         // Fill entire canvas (cover mode)
         const imgAspect = img.width / img.height
@@ -128,16 +130,16 @@ export default function GlacierScroll({
         
         if (imgAspect > canvasAspect) {
           // Image is wider - fit to height and crop sides
-          drawHeight = canvas.height
-          drawWidth = canvas.height * imgAspect
+          drawHeight = canvas.height * 0.85 // Scale down to 85% height
+          drawWidth = drawHeight * imgAspect
           drawX = (canvas.width - drawWidth) / 2
-          drawY = 0
+          drawY = canvas.height * 0.25 // Position lower to give more space for header
         } else {
           // Image is taller - fit to width and crop top/bottom
           drawWidth = canvas.width
-          drawHeight = canvas.width / imgAspect
+          drawHeight = canvas.width / imgAspect * 0.85 // Scale down to 85% 
           drawX = 0
-          drawY = (canvas.height - drawHeight) / 2
+          drawY = canvas.height * 0.25 // Position lower to give more space for header
         }
         
         ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight)

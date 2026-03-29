@@ -14,7 +14,7 @@ const config: Config = {
       },
       colors: {
         glacier: {
-          DEFAULT: '#A9D6E5',
+          DEFAULT: '#eaeaec',
           light: '#DFF6FF',
         },
       },
