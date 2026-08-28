@@ -10,7 +10,7 @@ A premium landing page featuring scroll-driven canvas animation revealing a wate
 - ✨ Framer Motion narrative overlays
 - 🧊 Glacier-themed color palette (#A9D6E5)
 - ⚡ Sophisticated preloader with progress tracking
-
+ kj
 ## Tech Stack
 
 - Next.js 14 (App Router)
