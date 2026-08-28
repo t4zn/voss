@@ -1,6 +1,6 @@
 # VOSS — Cinematic Scrollytelling Experience
 
-A premium, Awwwards-level landing page featuring scroll-driven canvas animation revealing a water bottle emerging from a glacier.
+A premium landing page featuring scroll-driven canvas animation revealing a water bottle emerging from a glacier.
 
 ## Features
 
